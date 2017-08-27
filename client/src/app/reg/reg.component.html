@@ -1,0 +1,30 @@
+ 
+
+  <form #f='ngForm' (ngSubmit)="login(f.value)">
+      <div class="row">
+        <div class="col-sm-12">
+      <md-input-container>
+          <input mdInput type="email" name="email" placeholder="your Email" [(ngModel)]="email" required />
+        </md-input-container>
+        </div>
+      </div>
+      
+       
+      <div class="row">
+      <div class="col-sm-12">  
+        <md-input-container>
+        <input mdInput type="password" name="pass" placeholder="your password" [(ngModel)]="pass" required />
+          </md-input-container>
+        </div>
+      </div>
+       
+      
+      <div class="row">
+            <button md-raised-button color="primary" type="submit" [disabled]="!f.valid">
+              Sign up
+            </button>
+          </div>
+        </form>
+         
+        
+          

@@ -1,0 +1,18 @@
+<md-card>
+  
+  <md-card-title><md-toolbar color="primary">  
+
+          <a md-button routerLink="/" routerLinkActive="act" [routerLinkActiveOptions]="{exact:true}" >login</a>
+          <a md-button routerLink="/reg" routerLinkActive="act"  >register</a>
+    
+  </md-toolbar>
+</md-card-title>
+
+
+<md-card-content>
+  <router-outlet>
+  </router-outlet>
+
+  </md-card-content>
+
+</md-card>
